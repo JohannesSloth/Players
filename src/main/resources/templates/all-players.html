@@ -1,0 +1,19 @@
+<!--all-players.html-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:if="${all != null}">
+    <h1>Great Football Players</h1>
+    <ul>
+        <li th:each="player : ${all}" th:text="${player}"></li>
+    </ul>
+</div>
+<br/>
+<br/>
+<a href="/">Back to home</a>
+</body>
+</html>
